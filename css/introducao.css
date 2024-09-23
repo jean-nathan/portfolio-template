@@ -1,0 +1,69 @@
+.introducao {
+  max-width: 75rem; /* tamanho máximo que o herder pode crescer */
+  padding: 2.5rem 2.25rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6.25rem;
+  align-items: center; /* Alinha o conteudo no centro da imagem */
+}
+
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125; /* Por ser uma tipografia maior, colocamos altura menor (Ele também multiplica o tamanho da fonte */
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.introducao h1::before {
+  content: "";
+  display: block;
+  width: 130px; /* Vai ter o tamanho do svg */
+  height: 100px; /* Vai ter o tamanho do svg */
+  background: url("../img/detalhe.svg") no-repeat center; /* Definido pra nao repetir a img e centralizar ela */
+  position: absolute;
+  top: -0.9375rem;
+  left: -2.5rem;
+  z-index: -1; /* Colocar o elemento pra tras, lembre, ele precisa ter position */
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+/* Ao tentar deixar responsivo a imagem diminui mas o texto nao porque ele foi definido como grande e a palavra Desenvolvedor não quebra, por isso usaremos media queries */
+
+@media (max-width: 62.5rem) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 50rem) {
+  .introducao {
+    grid-template-columns: 1fr 1fr; /* Melhora o tamanho da imagem e textos */
+    gap: 2.5rem;
+  }
+
+  .introducao h1 {
+    font-size: 2rem;
+  }
+
+  /* Reajustado item que possui position pois ele nao fazia sentindo da forma que ele estava em telas menores */
+  .introducao h1::before {
+    width: 30px;
+    height: 10px;
+    left: 0;
+  }
+}
+
+@media (max-width: 26rem) {
+  .introducao {
+    grid-template-columns: 1fr; /* Depois definimos somente 1 coluna pois nao existe mais imagem, assim ficando uma coluna vazia */
+  }
+
+  .introducao img {
+    display: none;
+  }
+}

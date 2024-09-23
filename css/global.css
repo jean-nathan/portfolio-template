@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: "Fira Sans", Arial, sans-serif;
+  color: #141414;
+  margin-bottom: 1000px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Classe que irei reaproveitar */
+.subtitulo {
+  font-size: 8rem;
+  line-height: 1; /* Deixa as palavras bem entre cada linha mais grudadas */
+  max-width: 4ch; /* 4ch define que a palavra nao passará de 4 caracteres se eu aumentar a largura, mas ela pode ser menor. */
+  text-transform: uppercase;
+  word-break: break-all; /* Quebra palavra pra caber */
+}
