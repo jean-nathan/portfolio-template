@@ -1,0 +1,116 @@
+.formacao {
+  background: #141414;
+  color: #ffffff;
+}
+
+.formacao-container {
+  max-width: 75rem; /* tamanho máximo que o herder pode crescer */
+  padding: 2.5rem 2.25rem;
+  margin: 0 auto; /* técnica para centralizar o header ao meio */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6.25rem;
+}
+
+.formacao .subtitulo {
+  color: #000000;
+}
+
+.formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch; /* Não passa de 40 caracteres por linha */
+  margin-bottom: 60px;
+  color: #a3a3a3;
+}
+
+.formacao-texto strong {
+  color: #ffffff;
+}
+
+.faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.faculdade {
+  flex: 1;
+  background: #000000;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex; /* Aplicado para o span que é filho virar um item de nivel bloco flexivel respeitando todas as direcioes */
+  flex-direction: column;
+}
+
+.faculdade-tipo {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  margin-bottom: 10px;
+}
+
+.faculdade-curso {
+  font-size: 1.125rem;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  position: relative;
+  flex: 1; /* Aplicado flex 1 para que todos os itens crescam e fiquem iguais o tamanho */
+}
+
+.faculdade-curso::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute; /* Quando definido, seu padding será do tamanho do seu conteudo */
+  left: -24px;
+}
+
+.faculdade-instituicao {
+  font-size: 1.125em;
+  color: #a3a3a3;
+}
+
+.cursos {
+  margin-bottom: 60px;
+}
+
+.formacao-extra h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #f8f8f8;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.formacao-extra h3::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.cursos h3::before {
+  background: url("../img/cursos.svg") no-repeat center;
+}
+
+.idiomas h3::before {
+  background: url("../img/idiomas.svg") no-repeat center;
+}
+
+.formacao-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.formacao-extra span {
+  color: #8f8f8f;
+}
