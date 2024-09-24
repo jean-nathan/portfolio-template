@@ -11,15 +11,15 @@
 .introducao h1 {
   font-size: 4.5rem;
   line-height: 1.125; /* Por ser uma tipografia maior, colocamos altura menor (Ele também multiplica o tamanho da fonte */
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   position: relative;
 }
 
 .introducao h1::before {
   content: "";
   display: block;
-  width: 130px; /* Vai ter o tamanho do svg */
-  height: 100px; /* Vai ter o tamanho do svg */
+  width: 8.125rem; /* Vai ter o tamanho do svg */
+  height: 6.25rem; /* Vai ter o tamanho do svg */
   background: url("../img/detalhe.svg") no-repeat center; /* Definido pra nao repetir a img e centralizar ela */
   position: absolute;
   top: -0.9375rem;
@@ -52,8 +52,8 @@
 
   /* Reajustado item que possui position pois ele nao fazia sentindo da forma que ele estava em telas menores */
   .introducao h1::before {
-    width: 30px;
-    height: 10px;
+    width: 1.875rem;
+    height: 0.625rem;
     left: 0;
   }
 }

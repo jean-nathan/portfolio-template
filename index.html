@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Desenvolvedor Front End & UX/UI Designer"> <!-- Descricao do site -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
 
 <body>
   <header class="header">
-    <img src="./img/marca.svg" alt="Lobo">
+    <img src="./img/marca.svg" alt="Lobo" width="104" height="38">
     <nav>
       <ul class="header-menu">
         <li><a href="#experiencia">Experiência</a></li>
@@ -24,7 +25,7 @@
   </header>
 
   <main class="introducao">
-    <img src="./img/perfil.jpg" alt="Lobo Cinza">
+    <img src="./img/perfil.jpg" alt="Lobo Cinza" width="360" height="520"> <!-- Quando o tamanho da imagem é explicitamente definido (width e height), o navegador pode reservar o espaço necessário no layout antes mesmo de carregar a imagem. Isso evita o "reflow" (reposicionamento do conteúdo) enquanto a página está sendo carregada. -->
     <div>
       <h1>Desenvolvedor<br>Front End &<br>UX/UI Designer</h1>
       <p>Localizado em São Paulo</p>
@@ -125,6 +126,18 @@
       </div>
     </div>
   </section>
+
+  <footer class="footer" id="contato">
+    <div class="footer-container">
+      <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</p>
+      <ul class="footer-contato">
+        <li>lobo@email.com</li>
+        <li>+55 21 9999-9999</li>
+        <li><a href="http://">@instagram</a></li>
+      </ul>
+      <p class="footer-copy">Lobo. Alguns direitos reservados.</p>
+    </div>
+  </footer>
 </body>
 
 </html>
